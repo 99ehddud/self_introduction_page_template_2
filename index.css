@@ -4,23 +4,36 @@
 /* For Selectors */
 body {
     margin: 0;
-    background-color: skyblue;
 }
 
 main {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#front, #back {
+    border-radius: 30px;
 }
 
 #front {
-
+    background-color: skyblue;
 }
 
 #back {
-
+    opacity: 0;
+    visibility: hidden;
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     height: 40px;
-    background-color: plum;
+    border-top: 1px solid black;
+}
+
+footer > p {
+    margin: 0;
 }
