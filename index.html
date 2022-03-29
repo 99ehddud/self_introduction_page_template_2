@@ -1,3 +1,14 @@
+<!-- 
+    div id="front" : image, name, work/education
+    div id="back"  : tel, e-mail, 
+
+    function : 
+        1. resize() : function that resize contents
+        2. rotate() : function that rotate main panel when user click certain button or part
+        -> refer : https://stackoverflow.com/questions/55226088/rotate-div-by-clicking-on-another-div
+        3. 
+ -->
+
 <!DOCTYPE html>
 
 <html lang="ja">
@@ -5,19 +16,28 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="index.css" />
+        <script type="text/javascript" src="index.js"></script>
         <title>Calendar</title>
     </head>
 
     <body>
-
         <main>
+            <div id="front">
 
+            </div>
+            <div id="back">
+
+            </div>
         </main>
 
         <footer>
 
         </footer>
-        
+
+        <script>
+            resize();
+            window.onresize = function() { resize(); }
+        </script>
     </body>
 
 </html>

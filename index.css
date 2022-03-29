@@ -1,0 +1,26 @@
+/* For Fonts */
+
+
+/* For Selectors */
+body {
+    margin: 0;
+    background-color: skyblue;
+}
+
+main {
+    
+}
+
+#front {
+
+}
+
+#back {
+
+}
+
+footer {
+    box-sizing: border-box;
+    height: 40px;
+    background-color: plum;
+}
