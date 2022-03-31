@@ -13,6 +13,7 @@ main {
 }
 
 #front, #back {
+    display: flex;
     border-radius: 30px;
 }
 
@@ -20,7 +21,20 @@ main {
     background-color: skyblue;
 }
 
+#image_div { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#information_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #back {
+    background-color: orange;
     opacity: 0;
     visibility: hidden;
 }
