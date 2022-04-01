@@ -6,19 +6,17 @@ body {
     margin: 0;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #front, #back {
+    position: absolute;
     display: flex;
     border-radius: 30px;
 }
 
 #front {
     background-color: skyblue;
+    transition: 1.5s;
+    z-index: 1;
 }
 
 #image_div { 
@@ -29,14 +27,19 @@ main {
 
 #information_div {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#information_div > p {
+    margin: 0;
+    font-size: 4vmin;
 }
 
 #back {
     background-color: orange;
-    opacity: 0;
-    visibility: hidden;
+    transition: 1.5s;
+    z-index: 0;
 }
 
 footer {
@@ -50,4 +53,5 @@ footer {
 
 footer > p {
     margin: 0;
+    font-size: 2vmin;
 }
