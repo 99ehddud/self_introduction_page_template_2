@@ -42,18 +42,22 @@ function rotateToBack() {
 
     front.style.transform = 'rotateY(180deg)'; // need to be modified
     front.style.zIndex = 0;
-    back.style.transform = 'rotateY(180deg)';
+    front.style.visibility = "hidden";
+    back.style.transform = 'rotateY(360deg)';
     back.style.zIndex = 1;
+    back.style.visibility = "visible";
 }
 
 function rotateToFront() {
     const front = document.querySelector('#front');
     const back = document.querySelector('#back');
 
-    back.style.transform = 'rotateY(360deg)';
+    back.style.transform = 'rotateY(180deg)';
     back.style.zIndex = 0;
+    back.style.visibility = "hidden";
     front.style.transform = 'rotateY(360deg)'; // need to be modified
     front.style.zIndex = 1;
+    front.style.visibility = "visible";
 }
 
 // Should modify border-radius by function resize()
