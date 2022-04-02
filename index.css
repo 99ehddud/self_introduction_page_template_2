@@ -1,5 +1,6 @@
 /* For Fonts */
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
 
 /* For Selectors */
 body {
@@ -28,20 +29,49 @@ body {
 }
 
 #information_div {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
-#information_div > p {
+#name, #belonging {
     margin: 0;
-    font-size: 4vmin;
+    font-size: 5vmin;
+    font-family: 'Kanit', sans-serif;
+}
+
+#name {
+    font-weight: 500;
+}
+
+#belonging {
+    font-weight: 300;
 }
 
 #back {
     transition: 1.5s;
     z-index: 0;
     transform: rotateY(180deg);
+    align-items: center;
+}
+
+#inform_table {
+    border-collapse: collapse;
+}
+
+.tableLabel, .tableContent {
+    padding: 2vmin;
+    font-size: 3vmin;
+    font-family: 'Oswald', sans-serif;
+}
+
+.tableLabel {
+    font-weight: 500;
+}
+
+.tableContent {
+    font-weight: 300;
 }
 
 footer {

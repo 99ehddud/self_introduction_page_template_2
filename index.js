@@ -10,6 +10,9 @@ function resize() {
     const picture = document.querySelector('#picture');
     const informationDiv = document.querySelector('#information_div');
     const back = document.querySelector('#back');
+    const informTable = document.querySelector('#inform_table');
+    const tableLabel = document.querySelector('.tableLabel');
+    const tableContent = document.querySelector('.tableContent');
     const footer = document.querySelector('footer');
 
     let footerHeight = footer.offsetHeight;
@@ -30,8 +33,15 @@ function resize() {
     back.style.height = (innerHeight * 0.6) + 'px'; // need to be modified
     back.style.top = (innerHeight - back.offsetHeight) / 2 + 'px';
     back.style.left = (innerWidth - back.offsetWidth) / 2 + 'px';
+    informTable.style.width = (back.offsetWidth * 0.8) + 'px';
+    informTable.style.height = (back.offsetHeight * 0.8) + 'px';
+    informTable.style.marginLeft = (informTable.offsetWidth * 0.1) + 'px';
+    tableLabel.style.width = (informTable.offsetWidth * 0.4) + 'px';
+    tableContent.style.width = (informTable.offsetWidth * 0.6) + 'px';
     footer.style.width = innerWidth + 'px';
 }
+
+// Not be resized when user change the window's size
 
 // In front, If front(back) offsetWidth is shorter than offsetHeight, 
 // should rearrange image and paragraph
