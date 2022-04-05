@@ -14,47 +14,35 @@ function resize() {
     const tableLabel = document.querySelector('.tableLabel');
     const tableContent = document.querySelector('.tableContent');
 
-    let frontWidth = innerWidth * 0.6;
-    let frontHeight = (innerHeight) * 0.6;
-    let backWidth = innerWidth * 0.6;
-    let backHeight = (innerHeight) * 0.6;
-
     main.style.width = innerWidth + 'px';
-    main.style.height = (innerHeight) + 'px';
+    main.style.height = innerHeight + 'px';
+
+    let frontHeight = innerHeight * 0.6;
+    let frontWidth = frontHeight * 1.58;
+    let backHeight = frontHeight;
+    let backWidth = frontWidth;
+    let frontTop = (innerHeight - frontHeight) / 2;
+    let frontLeft = (innerWidth - frontWidth) / 2;
+    let backTop = frontTop;
+    let backLeft = frontLeft;
+    let imageDivWidth = (frontWidth - 4) / 2;
+    let imageDivHeight = (frontHeight - 4) / 2;
+    let informationDivWidth = imageDivWidth;
+    let informationDivHeight = imageDivHeight;
+
+
+    front.style.width = frontWidth + 'px';
+    front.style.height = frontHeight + 'px';
+    back.style.width = backWidth + 'px';
+    back.style.height = backHeight + 'px';
     
-    front.style.width = frontWidth + 'px'; // need to be modified
-    front.style.height = frontHeight + 'px'; // need to be modified
-    front.style.top = (innerHeight - frontHeight)/2 + 'px';
-    front.style.left = (innerWidth - frontWidth)/2 + 'px';
-    
-    back.style.width = backWidth + 'px'; // need to be modified
-    back.style.height = backHeight + 'px'; // need to be modified
-    back.style.top = (innerHeight - backHeight) / 2 + 'px';
-    back.style.left = (innerWidth - backWidth) / 2 + 'px';
+    front.style.top = frontTop + 'px';
+    front.style.left = frontLeft + 'px';
+    back.style.top = backTop + 'px';
+    back.style.left = backLeft + 'px';
 
-    imageDiv.style.width = (frontWidth / 2 ) + 'px';
-    imageDiv.style.height = frontHeight + 'px';
-
-    let pictureWidth = imageDiv.offsetWidth / 1.7;
-    let pictureHeight = pictureWidth * 4 / 3;
-
-    picture.style.width = pictureWidth + 'px';
-    picture.style.height = pictureHeight + 'px';
-
-    informationDiv.style.width = (frontWidth / 2) + 'px';
-    informationDiv.style.height = frontHeight + 'px';
-
-    let informTableWidth = backWidth * 0.8;
-    let informTableHeight = backHeight * 0.8;
-    let informTableMarginLeft = informTableWidth * 0.1;
-    let tableLabelWidth = informTableWidth * 0.4;
-    let tableContentWidth = informTableWidth * 0.6;
-    
-    informTable.style.width = informTableWidth + 'px';
-    informTable.style.height = informTableHeight + 'px';
-    informTable.style.marginLeft = informTableMarginLeft + 'px';
-    tableLabel.style.width = tableLabelWidth + 'px';
-    tableContent.style.width = tableContentWidth + 'px';
+    imageDiv.style.width = imageDivHeight + 'px';
+    imageDiv.style.height = imageDivHeight + 'px';
 }
 
 // Not be resized when user change the window's size
