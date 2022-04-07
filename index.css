@@ -13,14 +13,19 @@ main {
     justify-content: center;
 }
 
-#front {
+#front, #back {
+    position: absolute;
     box-sizing: border-box;
     width: 632px;
     height: 400px;
     border: 2px solid rgb(196, 118, 236);
     border-radius: 30px;
     background-color: white;
-    transform: 1.5s;
+    transition: 1.5s;
+}
+
+#front {
+    z-index: 1;
 }
 
 #image_div {
@@ -58,4 +63,9 @@ main {
 
 #belonging {
     font-weight: 300;
+}
+
+#back {
+    z-index: 0;
+    transform: rotateY(180deg);
 }
