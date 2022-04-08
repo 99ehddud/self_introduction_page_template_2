@@ -53,7 +53,7 @@ main {
 
 #name, #belonging {
     margin: 0;
-    font-size: 5vmin;
+    font-size: 40px;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -68,4 +68,29 @@ main {
 #back {
     z-index: 0;
     transform: rotateY(180deg);
+    padding: 38px 34px;
+}
+
+#inform_table {
+    border-collapse: collapse;
+    width: 560px;
+    height: 320px;
+}
+
+.tableLabel {
+    padding-left: 30px;
+    width: 200px;
+    height: 80px;
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.tableContent {
+    padding-left: 30px;
+    width: 360px;
+    height: 80px;
+    font-family: 'Kanit';
+    font-size: 30px;
+    font-weight: 300;
 }
