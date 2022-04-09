@@ -7,12 +7,6 @@ body {
     margin: 0;
 }
 
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #front, #back {
     position: absolute;
     box-sizing: border-box;
@@ -69,6 +63,7 @@ main {
     z-index: 0;
     transform: rotateY(180deg);
     padding: 38px 34px;
+    visibility: hidden;
 }
 
 #inform_table {
