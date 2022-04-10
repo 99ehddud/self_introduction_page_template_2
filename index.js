@@ -1,5 +1,3 @@
-// !! Modify function resize(), especially top & left !!
-
 function resize() {
     let innerWidth = window.innerWidth;
     let innerHeight = window.innerHeight;
@@ -32,10 +30,6 @@ function resize() {
         back.style.top = '0px';
     }
 }
-
-
-// In front, If front(back) offsetWidth is shorter than offsetHeight, 
-// should rearrange image and paragraph
 
 function rotateToBack() {
     const front = document.querySelector('#front');
