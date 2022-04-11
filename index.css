@@ -27,7 +27,9 @@ body {
     box-sizing: border-box;
     width: 628px;
     height: 52px;
-    border-bottom: 2px solid rgb(196, 118, 236);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: rgb(196, 118, 236);
 }
 
 #top_bar > p {
@@ -38,7 +40,8 @@ body {
     width: 600px;
     height: 50px;
     font-family: 'Oswald', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
+    color: white;
     background-color: transparent;
 }
 
@@ -46,7 +49,7 @@ body {
     box-sizing: border-box;
     float: left;
     width: 314px;
-    height: 342px;
+    height: 344px;
 }
 
 #picture {
@@ -62,7 +65,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     width: 314px;
-    height: 342px;
+    height: 344px;
 }
 
 #name, #belonging {

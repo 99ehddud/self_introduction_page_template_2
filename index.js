@@ -15,14 +15,14 @@ function resize() {
     let left = (innerWidth - frontWidth) / 2;
     let top = (innerHeight - frontHeight) / 2;
 
-    if (innerWidth-frontWidth >= 0) {
+    if (innerWidth - frontWidth >= 0) {
         front.style.left = left + 'px';
         back.style.left = left + 'px';
     } else {
         front.style.left = '0px';
         back.style.left = '0px';
     }
-    if (innerHeight-frontHeight >= 0) {
+    if (innerHeight - frontHeight >= 0) {
         front.style.top = top + 'px';
         back.style.top = top + 'px';
     } else {
